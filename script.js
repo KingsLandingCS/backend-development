@@ -1,12 +1,8 @@
+function abcd() {
 
-var obj = {
-    name: "John",
-    age: 25
+    return 12;
 }
 
-Object.freeze(obj);
 
 
-obj.age = 26;
-
-console.log(obj.age);
+var ans = abcd();

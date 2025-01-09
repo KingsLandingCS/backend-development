@@ -1,9 +1,7 @@
-const fs = require('fs');
+const http = require("http");
 
-fs.rm("./copy", { recursive: true }, function (err) {
-    if (err) {
-        console.error(err.message);
-    } else {
-        console.log("removed");
-    }
+const server = http.createServer(function (req, res) {
+    res.end("Hello World!");
 })
+
+server.listen(3000,);
